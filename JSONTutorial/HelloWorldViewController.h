@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloWorldViewController : UIViewController
+@interface HelloWorldViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,NSURLConnectionDataDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *myTableView;
+- (IBAction)GetTop10Alubms:(id)sender;
 
 @end
